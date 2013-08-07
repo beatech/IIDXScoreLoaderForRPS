@@ -16,8 +16,8 @@ fi
 mkdir ${FIREFOX_DIR}
 cp -r ${FIREFOX_SRC}/* ${FIREFOX_DIR}
 cp ${RPS_SRC}/* ${FIREFOX_DIR}/content
-zip -r ${BIN_DIR}/IIDXScoreSenderForRPS.zip ${FIREFOX_DIR}/*
-mv ${BIN_DIR}/IIDXScoreSenderForRPS.zip ${BIN_DIR}/IIDXScoreSenderForRPS.xpi
+zip -r ${BIN_DIR}/IIDXScoreLoaderForRPS.zip ${FIREFOX_DIR}/*
+mv ${BIN_DIR}/IIDXScoreLoaderForRPS.zip ${BIN_DIR}/IIDXScoreLoaderForRPS.xpi
 
 # Chrome (crxmake gem required)
 CHROME_SRC=./chrome/src
@@ -29,4 +29,4 @@ fi
 mkdir ${CHROME_DIR}
 cp -r ${CHROME_SRC}/* ${CHROME_DIR}
 cp ${RPS_SRC}/* ${CHROME_DIR}
-crxmake --pack-extension=${CHROME_DIR} --extension-output=${BIN_DIR}/IIDXScoreSenderForRPS.crx
+crxmake --pack-extension=${CHROME_DIR} --extension-output=${BIN_DIR}/IIDXScoreLoaderForRPS.crx
