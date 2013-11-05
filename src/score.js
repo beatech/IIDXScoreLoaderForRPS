@@ -14,7 +14,7 @@ function loadScore(iidxid, order, index) {
   getAndCallBack(url, data, function(responseText) {
     if (responseText.indexOf('サーバーに接続できません。') != -1) {
       if (order == 6) {
-        updatePower();
+        updatePower(iidxid);
       } else {
         startLoading(iidxid, order + 1);
       }
