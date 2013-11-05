@@ -3,7 +3,7 @@
 
    "name": "IIDX Score Sender for RPS",
    "description": "beatmania IIDX 20 Score Loader for RPS (http://rps.beatech.net/)",
-   "version": "0.1",
+   "version": "0.2",
 
    "permissions": [
      "http://p.eagate.573.jp/",
